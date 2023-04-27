@@ -1,0 +1,32 @@
+@use './variables' as *;
+
+.container {
+  max-width: $lbm;
+  margin: 0 auto;
+}
+section {
+  padding: 7rem 2rem 5rem 2rem;
+
+  @media screen and (min-width: $lbs) {
+    padding: 7rem 5rem;
+  }
+}
+.min-100vh {
+  min-height: 100vh;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  @media screen and (min-width: $lbs) {
+    font-size: 1.6rem;
+  }
+
+  span {
+    text-transform: uppercase;
+    opacity: 0.45;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../global/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $lbxs) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  p {
+    a {
+      color: #df3b3b;
+      text-decoration: none;
+    }
+  }
+
+  .footer_socials {
+    display: flex;
+    column-gap: 1.5rem;
+    svg {
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+
+}
